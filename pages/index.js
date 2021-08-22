@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <p>#7からです</p>
+      <p>#８からです</p>
       <Main page="index"/>
 
 
