@@ -6,7 +6,7 @@ export function Headline(props) {
 			<h1 className={classes.title}>{props.page} Page</h1>
 
 			<p className={classes.description}>
-				Get started by #11から {props.children}
+				Get started by #12から {props.children}
 
 			</p>
 		</>
