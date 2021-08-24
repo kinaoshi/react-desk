@@ -11,7 +11,7 @@ export default function Home() {
 
 	const handleClick = useCallback(() => {
 		if (count < 10) {
-			setCount((count) => count + 1);
+			setCount((PrevCount) => PrevCount + 1);
 		}
 	}, [count]);
 	useEffect(() => {
@@ -27,9 +27,9 @@ export default function Home() {
 		}
 		setText(e.target.value.trim());
 	}, []);
-	const [isShow, setIsShow] = useState(true);
+
 	const handleDisplay = () => {
-		setIsShow((isShow) => !isShow);
+		setIsShow((prevIsShow) => !prevIsShow);
 	};
 	return (
 		<div className={classes.container}>
