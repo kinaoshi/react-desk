@@ -24,10 +24,10 @@ export default function Home(props) {
 			</Head>
 			<Header />
 			{isShow ? <h1>{count}</h1> : null}
-			<button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
 			<button href="./about" onClick={handleClick}>
-				カウンター#16
+				ボタン#18
 			</button>
+			<button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
 
 			<input type="text" value={text} onChange={handleChange} />
 			<button onClick={handleAdd}>追加</button>
