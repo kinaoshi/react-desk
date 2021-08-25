@@ -5,7 +5,7 @@ export const useBgColor = () => {
 	const router = useRouter();
 	
     const bgColor = useMemo(() => {
-		// return router.pathname === "/" ? "lightblue" : "beige";
+		
 		switch (router.pathname) {
 			case "/": {
 				return "lightblue";
