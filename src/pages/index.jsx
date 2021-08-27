@@ -20,11 +20,13 @@ const Home = (props) => {
 				<title>Index Page</title>
 			</Head>
 			<Header />
+			{posts.length > 0 ?(
 			<ol>
 				{posts.map((post) => {
 					return <li key={post.id}>{post.title}</li>;
 				})}
 			</ol>
+			) : null};
 		</div>
 	);
 };
