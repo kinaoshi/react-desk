@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 import { Main } from "src/components/Main";
-import classes from "../styles/Home.module.css";
+import classes from "src/styles/Home.module.css";
 
 const About=(props)=> {
 	return (
@@ -12,7 +12,7 @@ const About=(props)=> {
 			</Head>
 			<Header />
 			<button href="./about" onClick={props.handleClick}>
-				ボタン#18
+				ボタン#23
 			</button>
 			<button onClick={props.handleDisplay}>
 				{props.isShow ? "非表示" : "表示"}
