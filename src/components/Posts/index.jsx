@@ -1,19 +1,16 @@
-
-import useSWR from "swr";
+import { usePosts } from "src/hooks/usePosts";
 
 
 export const Posts = () => {
-	const { data, error } = useSWR("https://jsonplaceholder.typicode.com/posts");
-	console.log({ data, error });
-	
+	const { data, error, isLoading,isEmpty } = usePosts();	
 
-	if (!error && !data) {
+	if (isLoading) {
 		return <div>ローディング中</div>;
 	}
 	if (error) {
 		return <div>{error.message}</div>;
 	}
-	if (data.length === 0) {
+	if (isEmpty) {
 		return <div>データは空です</div>;
 	}
 
