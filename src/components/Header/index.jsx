@@ -16,7 +16,7 @@ export const Header = () => {
 					</Link>
 				);
 			})}
-		
+		<p>#24から</p>
 		</header>
 	);
 };
