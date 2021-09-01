@@ -6,6 +6,8 @@ export const Header = () => {
 	const NAV_ITEMS = [
 		{ href: "/", label: "Index" },
 		{ href: "/posts", label: "Posts" },
+		{ href: "/users", label: "Users" },
+		{ href: "/comments", label: "Comments" },
 	];
 	return (
 		<header className={classes.header}>
@@ -16,7 +18,6 @@ export const Header = () => {
 					</Link>
 				);
 			})}
-	
 		</header>
 	);
 };
