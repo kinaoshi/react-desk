@@ -4,7 +4,7 @@ import About from "src/pages/about";
 
 export const Header = () => {
 	const NAV_ITEMS = [
-		{ href: "/", label: "Index" },
+		{ href: "/posts", label: "Posts" },
 		{ href: "/about", label: "About" },
 	];
 	return (
