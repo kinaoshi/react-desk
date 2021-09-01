@@ -2,11 +2,11 @@ import Head from "next/head";
 
 import { Header } from "src/components/Header";
 
-import classes from "src/styles/Home.module.css";
+
 
 const About = () => {
 	return (
-		<div className={classes.container}>
+		<div>
 			<Head>
 				<title>About Page</title>
 			</Head>
