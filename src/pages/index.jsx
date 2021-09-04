@@ -13,7 +13,7 @@ const About = () => {
 			<Header />
 			<h1>Next.jsで学ぶreact講座</h1>
 			<p>JSONPlaceholderのAPIを色々叩いてみるよ！</p>
-			<p>#25から</p>
+		
 		</div>
 	);
 };
