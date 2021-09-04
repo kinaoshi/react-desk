@@ -8,7 +8,7 @@ const About = () => {
 	return (
 		<div>
 			<Head>
-				<title>About Page</title>
+				<title>Index Page</title>
 			</Head>
 			<Header />
 			<h1>Next.jsで学ぶreact講座</h1>
