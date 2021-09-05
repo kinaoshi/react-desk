@@ -1,8 +1,6 @@
-import Head from "next/head";
-
 import { usePost } from "src/hooks/usePost";
 import { useRouter } from "next/dist/client/router";
-import { UserByUserId } from "src/components/User/UserByUserId";
+import Link from "next/link";
 
 export const PostByCommentId = (props) => {
 	const router = useRouter();
@@ -15,5 +13,9 @@ export const PostByCommentId = (props) => {
 		return <div>{error.message}</div>;
 	}
 
-	return <p>{data?.body}</p>;
+	return (
+		<Link href={`/posts/${data.id}`}>
+			<a>{data?.body}</a>
+		</Link>
+	);
 };

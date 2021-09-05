@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useCommentsByPostsId } from "src/hooks/useFetchArray";
 
-export const CommentsByPostsId = (props) => {
+export const CommentsByPostId = (props) => {
 	const { data, error, isLoading, isEmpty } = useCommentsByPostsId(props.id);
 
 	if (isLoading) {
