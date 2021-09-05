@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { CommentsByPostsId } from "src/components/Comments/CommentsByPostsId";
-import { UserByUserId } from "src/components/User/UserByUserId";
+
 import { usePost } from "src/hooks/usePost";
 import { useRouter } from "next/dist/client/router";
+import { UserByUserId } from "src/components/User/UserByUserId";
 
 export const Post = () => {
 	const router = useRouter();
@@ -26,7 +26,7 @@ export const Post = () => {
 			<p>{data?.body}</p>
 			
 			<UserByUserId id={data.userId}/>
-			<CommentsByPostsId id={data.id}/>
+	
 		</div>
 	);
 };
