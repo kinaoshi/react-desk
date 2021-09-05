@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { CommentsByPostsId } from "src/components/Comments/CommentsByPostsId";
 import { UserByUserId } from "src/components/User/UserByUserId";
-import useSWR from "swr";
 import { usePost } from "src/hooks/usePost";
 import { useRouter } from "next/dist/client/router";
 
