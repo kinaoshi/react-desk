@@ -16,9 +16,12 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^4.29.2",
+    "autoprefixer": "^10.3.4",
     "eslint": "7.32.0",
     "eslint-config-next": "^11.1.0",
     "eslint-import-resolver-typescript": "^2.4.0",
-    "eslint-plugin-import": "^2.24.1"
+    "eslint-plugin-import": "^2.24.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.10"
   }
 }

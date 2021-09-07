@@ -1,10 +1,10 @@
+import "tailwindcss/tailwind.css";
 import Head from "next/head";
-import "../styles/globals.css";
+// import "../styles/globals.css";
 
 import { SWRConfig } from "swr";
 import { Layout } from "src/components/Layout";
 const MyApp = ({ Component, pageProps }) => {
-	
 	return (
 		<>
 			<SWRConfig
@@ -18,7 +18,7 @@ const MyApp = ({ Component, pageProps }) => {
 					<link rel="icon" href="/favicon.ico" />
 				</Head>
 				<Layout>
-				<Component {...pageProps}  />
+					<Component {...pageProps} />
 				</Layout>
 			</SWRConfig>
 		</>
