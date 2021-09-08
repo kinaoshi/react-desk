@@ -10,20 +10,20 @@ export const CommentsByPostId = (props) => {
 	if (error) {
 		return <div>{error.message}</div>;
 	}
-    if (isEmpty) {
+	if (isEmpty) {
 		return <p>データは空です</p>;
 	}
 	return (
-		<ol>
+		<ul className="space-y-2">
 			{data.map((comment) => {
 				return (
-					<li key={comment.id}>
+					<li key={comment.id} className="border-b pb-2">
 						<Link href={`/comments/${comment.id}`}>
-							<a>{comment.body}</a>
+							<a className="block  hover:text-blue-500">{comment.body}</a>
 						</Link>
 					</li>
 				);
 			})}
-		</ol>
+		</ul>
 	);
 };

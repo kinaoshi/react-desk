@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Header = () => {
 	const NAV_ITEMS = [
-		{ href: "/", label: "Index#29" },
+		{ href: "/", label: "Index#30" },
 		{ href: "/posts", label: "Posts" },
 		{ href: "/users", label: "Users" },
 		{ href: "/comments", label: "Comments" },
