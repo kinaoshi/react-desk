@@ -1,5 +1,14 @@
 {
 	"javascript.preferences.importModuleSpecifier": "non-relative",
 	"editor.formatOnSave": true,
-	"editor.quickSuggestions":{ "strings": true } 
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"[json]": {
+	
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace"
+	}
 }
